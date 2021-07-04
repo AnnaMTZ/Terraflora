@@ -1,0 +1,511 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #18150d;
+  cursor: url("../cursorFlower.svg"), auto;
+}
+
+.photo {
+  background: url(bg_fav.JPG);
+  height: 100vh;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.photo .logo .description {
+  height: auto;
+  position: relative;
+  z-index: 20;
+  color: lightgrey;
+  margin-top: 4vh;
+  font-size: 27px;
+  left: 35px;
+  font-family: 'Chilanka', cursive;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: -4px;
+  text-align: center;
+  word-spacing: 12px;
+}
+
+.photo .logo h1 {
+  height: 5vh;
+  width: 20vw;
+  position: relative;
+  z-index: 20;
+  color: lightgrey;
+  font-size: 35px;
+  top: 35px;
+  left: 35px;
+  font-family: 'Chilanka', cursive;
+}
+
+.langSwitch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 8rem;
+  height: 5vh;
+  cursor: pointer;
+}
+
+.langSwitch img {
+  width: 30px;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.langSwitch img:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.menuCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 1rem;
+  height: auto;
+  width: 10rem;
+  margin: 3vh 3vw 0;
+  padding: auto 0;
+  position: absolute;
+  left: calc(93vw - 10rem);
+}
+
+.menuItem {
+  background-color: rgba(255, 255, 255, 0.6);
+  font-family: 'Chilanka', cursive;
+  font-weight: 800;
+  color: #18150d;
+  letter-spacing: 0.1vw;
+  width: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3.3rem;
+  margin-bottom: 5vh;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  font-size: 1.2rem;
+  border-radius: 9px;
+  position: relative;
+}
+
+.menuItem a {
+  color: #18150d;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  color: #c4c4c4;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.menuCont ul li:first-child {
+  background-color: transparent;
+  height: auto;
+  width: 8rem;
+  z-index: 10;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 25vh;
+}
+
+.menuItem a:hover {
+  color: #c4c4c4;
+}
+
+.menuItem.animate {
+  opacity: 0;
+  -webkit-animation-name: animateMenu;
+          animation-name: animateMenu;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.menuItem.animate1 {
+  opacity: 0;
+  -webkit-animation-name: animateMenu;
+          animation-name: animateMenu;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.menuItem.animate2 {
+  opacity: 0;
+  -webkit-animation-name: animateMenu;
+          animation-name: animateMenu;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.menuItem.animate3 {
+  opacity: 0;
+  -webkit-animation-name: animateMenu;
+          animation-name: animateMenu;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+@-webkit-keyframes animateMenu {
+  0% {
+    top: -50vh;
+    opacity: 0;
+  }
+  50% {
+    top: 5vh;
+    opacity: 0.5;
+  }
+  75% {
+    top: -3vh;
+    opacity: 0.75;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animateMenu {
+  0% {
+    top: -50vh;
+    opacity: 0;
+  }
+  50% {
+    top: 5vh;
+    opacity: 0.5;
+  }
+  75% {
+    top: -3vh;
+    opacity: 0.75;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+main {
+  min-width: 800px;
+  width: 80vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about {
+  margin: 3vh 0 10vh;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  border: solid 3px #0f580f;
+  border-radius: 5px;
+  position: relative;
+}
+
+.aboutText {
+  padding: 50px 25px;
+}
+
+.aboutText p {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.7;
+}
+
+.aboutText h2 {
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.7;
+  padding-bottom: 25px;
+  text-align: left;
+  color: #18150d;
+}
+
+.about .aboutPhotoCont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .aboutPhotoCont img {
+  height: auto;
+  width: 30vh;
+  padding: 0 15px;
+}
+
+.sectionHeader {
+  width: 100vw;
+  height: auto;
+  text-transform: uppercase;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+.sectionHeader:last-of-type {
+  margin-bottom: 5vh;
+}
+
+.sectionHeader h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #18150d;
+  font-weight: 300;
+}
+
+.socialApprove {
+  height: auto;
+  margin: 10vh auto 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.socialApprove .socialSection:first-of-type {
+  margin-right: 10vw;
+}
+
+.socialSection {
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 50%;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.7;
+  background-color: #ece8e8;
+  border: solid 1px #682518;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.socialPhoto {
+  position: absolute;
+  height: 10rem;
+  background-size: 10rem 10rem;
+  border-radius: 50%;
+  width: 10rem;
+  -webkit-transform: translate(-30%, -60%);
+          transform: translate(-30%, -60%);
+}
+
+.socialApprove .socialSection:first-of-type .socialPhoto {
+  background: url(../socialApprovePhoto/Ievgeniia.jpg) no-repeat center;
+  background-size: 10rem 10rem;
+}
+
+.socialApprove .socialSection:last-of-type .socialPhoto {
+  background: url(../socialApprovePhoto/profile.svg) no-repeat center;
+  background-size: 10rem 10rem;
+}
+
+.socialText {
+  font-size: 1rem;
+  padding: 40px 25px 25px;
+  text-indent: 80px;
+  font-stretch: expanded;
+  display: inline-block;
+  text-align: left;
+}
+
+.socialText p::first-line {
+  padding-left: 30px;
+  text-indent: 30px;
+}
+
+.socialText small {
+  font-style: italic;
+  font-weight: 500;
+  float: right;
+}
+
+.socialText .readMore {
+  display: none;
+  text-indent: 0px;
+}
+
+#hideText1,
+#hideText2 {
+  display: none;
+  margin-top: 10px;
+}
+
+.socialText .readAllText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socialText .readAllText1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socialText .readMoreBtn {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #bd402a;
+  color: white;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  font-weight: bold;
+}
+
+.readMoreBtn .readAllText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socialText .readMoreBtn:focus {
+  border: none;
+}
+
+.socialText .readMoreBtn:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.footerCont {
+  width: 100vw;
+  background-color: #41180f;
+  position: relative;
+  margin: 0 auto;
+  bottom: 0;
+  padding: 5vh auto;
+  height: auto;
+}
+
+.footer {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 800px;
+  width: 80vw;
+  margin: 0 auto;
+  background-color: #41180f;
+  padding: 10vh 0;
+}
+
+.footer nav ul li {
+  list-style-type: none;
+  padding-top: 15px;
+}
+
+.footer nav ul li a {
+  text-decoration: none;
+  font-family: 'Chilanka', cursive;
+  padding: 15px;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  font-size: 1rem;
+  font-weight: bold;
+  color: lightgrey;
+}
+
+.footer nav ul li a:hover {
+  color: #fab1a4;
+}
+/*# sourceMappingURL=index.css.map */
