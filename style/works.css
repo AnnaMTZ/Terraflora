@@ -16,9 +16,9 @@
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
-  -o-object-fit: contain;
   object-fit: contain;
-  height: 350px;
+  max-width: 15vw;
+  height: auto;
 }
 
 .img-window {
