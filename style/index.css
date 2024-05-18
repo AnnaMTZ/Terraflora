@@ -197,21 +197,29 @@ main {
   position: relative;
 }
 
+.aboutGallery {
+  margin: 3vh 0 10vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: solid 3px #682518;
+  border-radius: 5px;
+  position: relative;
+}
+
 .aboutText {
-  padding: 50px 25px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  padding: 0 2vw;
 }
 
-.aboutText p {
+p {
   font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.7;
 }
 
-.aboutText h2 {
+h2 {
   font-size: 1.1rem;
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.7;
-  padding-bottom: 25px;
   text-align: left;
   color: #18150d;
 }
@@ -242,7 +250,7 @@ main {
   margin-bottom: 5vh;
 }
 
-.sectionHeader h1 {
+.sectionHeader {
   font-family: "Montserrat", sans-serif;
   color: #18150d;
   font-weight: 300;

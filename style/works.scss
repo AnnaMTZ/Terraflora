@@ -1,5 +1,9 @@
 .object {
   margin-bottom: 15vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 2vw;
+  margin: 0 1rem 7vh 1rem;
 }
 
 .gallery {
