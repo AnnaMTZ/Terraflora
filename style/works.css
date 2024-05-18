@@ -1,7 +1,9 @@
+.object {
+  margin-bottom: 15vh;
+}
+
 .gallery {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(350px, 1fr)) [auto-fill];
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   width: 100%;
 }
@@ -13,12 +15,11 @@
 
 .galleryImage img {
   overflow: hidden;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
-  object-fit: contain;
-  max-width: 15vw;
-  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 350px;
 }
 
 .img-window {
@@ -30,14 +31,8 @@
   left: 0;
   z-index: 100;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -53,11 +48,10 @@
   padding: 6px 10px;
   border-radius: 4;
   background-color: #111111;
-  position: static;
+  position: absolute;
   top: 48vh;
   z-index: 700;
   width: 70px;
-  height: 25px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   cursor: pointer;
@@ -75,5 +69,4 @@
 .prev-btn,
 .next-btn:hover {
   opacity: 0.8;
-}
-/*# sourceMappingURL=works.css.map */
+}/*# sourceMappingURL=works.css.map */

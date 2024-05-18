@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   top: 0;
   left: 0;
@@ -31,10 +30,8 @@ body {
   margin-top: 4vh;
   font-size: 27px;
   left: 35px;
-  font-family: 'Chilanka', cursive;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  font-family: "Chilanka", cursive;
+  writing-mode: vertical-rl;
   text-orientation: upright;
   letter-spacing: -4px;
   text-align: center;
@@ -50,15 +47,12 @@ body {
   font-size: 35px;
   top: 35px;
   left: 35px;
-  font-family: 'Chilanka', cursive;
+  font-family: "Chilanka", cursive;
 }
 
 .langSwitch {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 8rem;
   height: 5vh;
   cursor: pointer;
@@ -67,31 +61,19 @@ body {
 .langSwitch img {
   width: 30px;
   cursor: pointer;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: ease-in-out 0.5s;
+  transform: scale(1);
   transition: ease-in-out 0.5s;
 }
 
 .langSwitch img:active {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .menuCont {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-right: 1rem;
   height: auto;
   width: 10rem;
@@ -103,27 +85,17 @@ body {
 
 .menuItem {
   background-color: rgba(255, 255, 255, 0.6);
-  font-family: 'Chilanka', cursive;
+  font-family: "Chilanka", cursive;
   font-weight: 800;
   color: #18150d;
   letter-spacing: 0.1vw;
   width: 8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 3.3rem;
   margin-bottom: 5vh;
-  -webkit-transition: all 0.7s;
   transition: all 0.7s;
   font-size: 1.2rem;
   border-radius: 9px;
@@ -146,11 +118,8 @@ body {
   width: 8rem;
   z-index: 10;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin-bottom: 25vh;
 }
 
@@ -160,67 +129,33 @@ body {
 
 .menuItem.animate {
   opacity: 0;
-  -webkit-animation-name: animateMenu;
-          animation-name: animateMenu;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: animateMenu;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .menuItem.animate1 {
   opacity: 0;
-  -webkit-animation-name: animateMenu;
-          animation-name: animateMenu;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-name: animateMenu;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 }
 
 .menuItem.animate2 {
   opacity: 0;
-  -webkit-animation-name: animateMenu;
-          animation-name: animateMenu;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-name: animateMenu;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
 
 .menuItem.animate3 {
   opacity: 0;
-  -webkit-animation-name: animateMenu;
-          animation-name: animateMenu;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-
-@-webkit-keyframes animateMenu {
-  0% {
-    top: -50vh;
-    opacity: 0;
-  }
-  50% {
-    top: 5vh;
-    opacity: 0.5;
-  }
-  75% {
-    top: -3vh;
-    opacity: 0.75;
-  }
-  100% {
-    top: 0px;
-    opacity: 1;
-  }
+  animation-name: animateMenu;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
 }
 
 @keyframes animateMenu {
@@ -241,37 +176,23 @@ body {
     opacity: 1;
   }
 }
-
 main {
   min-width: 800px;
   width: 80vw;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about {
   margin: 3vh 0 10vh;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: white;
-  border: solid 3px #0f580f;
+  border: solid 3px rgb(15, 88, 15);
   border-radius: 5px;
   position: relative;
 }
@@ -282,13 +203,13 @@ main {
 
 .aboutText p {
   font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.7;
 }
 
 .aboutText h2 {
   font-size: 1.1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.7;
   padding-bottom: 25px;
   text-align: left;
@@ -297,19 +218,10 @@ main {
 
 .about .aboutPhotoCont {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about .aboutPhotoCont img {
@@ -331,7 +243,7 @@ main {
 }
 
 .sectionHeader h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #18150d;
   font-weight: 300;
 }
@@ -339,10 +251,8 @@ main {
 .socialApprove {
   height: auto;
   margin: 10vh auto 15vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .socialApprove .socialSection:first-of-type {
@@ -352,18 +262,11 @@ main {
 .socialSection {
   height: 100%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 50%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.7;
   background-color: #ece8e8;
   border: solid 1px #682518;
@@ -377,8 +280,7 @@ main {
   background-size: 10rem 10rem;
   border-radius: 50%;
   width: 10rem;
-  -webkit-transform: translate(-30%, -60%);
-          transform: translate(-30%, -60%);
+  transform: translate(-30%, -60%);
 }
 
 .socialApprove .socialSection:first-of-type .socialPhoto {
@@ -423,14 +325,10 @@ main {
 }
 
 .socialText .readAllText {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .socialText .readAllText1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -441,14 +339,11 @@ main {
   background-color: #bd402a;
   color: white;
   cursor: pointer;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   font-weight: bold;
 }
 
 .readMoreBtn .readAllText {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -457,8 +352,7 @@ main {
 }
 
 .socialText .readMoreBtn:active {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .footerCont {
@@ -473,15 +367,9 @@ main {
 
 .footer {
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   min-width: 800px;
   width: 80vw;
   margin: 0 auto;
@@ -496,9 +384,8 @@ main {
 
 .footer nav ul li a {
   text-decoration: none;
-  font-family: 'Chilanka', cursive;
+  font-family: "Chilanka", cursive;
   padding: 15px;
-  -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
   font-size: 1rem;
   font-weight: bold;
@@ -507,5 +394,4 @@ main {
 
 .footer nav ul li a:hover {
   color: #fab1a4;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
