@@ -12,7 +12,7 @@
 body {
   background-color: #fff;
   color: #18150d;
-  cursor: url("../cursorFlower.svg"), auto;
+  // cursor: url("../cursorFlower.svg"), auto;
 }
 
 .photo {
@@ -434,13 +434,13 @@ h2 {
 .footer {
   height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   min-width: 800px;
-  width: 80vw;
+  width: 100vw;
   margin: 0 auto;
   background-color: #41180f;
-  padding: 10vh 0;
+  padding: 3vh 0;
 }
 
 .footer nav ul li {

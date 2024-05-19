@@ -1,11 +1,15 @@
+//
+
 // GENERAL //
 let windowWidth = window.innerWidth;
 
 /// BORYSPIL ///
 
-let imagesBor = document.querySelectorAll(".galleryImage");
-if (imagesBor) {
-  imagesBor.forEach((img, index) => {
+let images = document.querySelectorAll(".galleryImage");
+if (images) {
+  images.forEach((img, index) => {
+    console.log(img.childNodes[1].getAttribute("src"));
+
     img.addEventListener("click", () => {
       getLatestOpenedImg = index + 1;
 
@@ -17,13 +21,13 @@ if (imagesBor) {
 
       let newImg = document.createElement("img");
       newImgWindow.appendChild(newImg);
-      newImg.setAttribute("src", `/photo/bor/bor${getLatestOpenedImg}.jpg`);
+      newImg.setAttribute("src", `photo/gallery/${getLatestOpenedImg}.jpg`);
       newImg.setAttribute("id", "current-img");
 
       //the code below will run after the image is loaded
       newImg.onload = function () {
         let imgWidth = this.width;
-        let calcImgToEdge = (windowWidth - imgWidth) / 2 - 80;
+        // let calcImgToEdge = (windowWidth - imgWidth) / 2 - 80;
 
         // let newPrevBtn = document.createElement("a");
         // let btnPrevText = document.createTextNode("prev");
@@ -47,8 +51,8 @@ if (imagesBor) {
 
 function closeImg() {
   document.querySelector(".img-window").remove();
-  document.querySelector(".prev-btn").remove();
-  document.querySelector(".next-btn").remove();
+  // document.querySelector(".prev-btn").remove();
+  // document.querySelector(".next-btn").remove();
 }
 
 function changeImg(changeDir) {
@@ -61,13 +65,13 @@ function changeImg(changeDir) {
 
   if (changeDir === 1) {
     calcNewImg = getLatestOpenedImg + 1;
-    if (calcNewImg > imagesBor.length) {
+    if (calcNewImg > images.length) {
       calcNewImg = 1;
     }
   } else if (changeDir === 0) {
     calcNewImg = getLatestOpenedImg - 1;
     if (calcNewImg < 1) {
-      calcNewImg = imagesBor.length;
+      calcNewImg = images.length;
     }
   }
 
