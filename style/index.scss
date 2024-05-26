@@ -46,7 +46,7 @@ body {
   width: 20vw;
   position: relative;
   z-index: 20;
-  color: lightgrey;
+  color: rgb(238, 242, 215);
   font-size: 35px;
   top: 35px;
   left: 35px;
@@ -213,7 +213,7 @@ body {
 // MAIN container
 
 main {
-  min-width: 800px;
+  min-width: 500px;
   width: 80vw;
   margin: 0 auto;
   display: flex;
@@ -228,6 +228,7 @@ main {
   margin: 3vh 0 10vh;
   height: auto;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   background-color: white;
   border: solid 3px rgb(15, 88, 15);
@@ -238,7 +239,7 @@ main {
 }
 
 .aboutGallery {
-  margin: 3vh 0 10vh;
+  // margin: 3vh 0 10vh;
   height: auto;
   display: flex;
   justify-content: center;
@@ -253,7 +254,7 @@ main {
 .aboutText {
   font-family: "Montserrat", sans-serif;
   line-height: 1.7;
-  padding: 0 2vw;
+  padding: 1vh 2vw;
 }
 
 p {
@@ -265,6 +266,7 @@ h2 {
   // padding-bottom: 25px;
   text-align: left;
   color: #18150d;
+  margin-left: 3vw;
 }
 
 .about .aboutPhotoCont {
@@ -461,4 +463,40 @@ h2 {
 
 .footer nav ul li a:hover {
   color: #fab1a4;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    max-width: 500px;
+    min-width: 250px;
+
+    .about {
+      flex-direction: column;
+
+      .aboutPhotoCont {
+        padding: 2vh;
+      }
+    }
+    .socialApprove {
+      flex-direction: column;
+
+      .socialSection {
+        width: 100%;
+
+        &:first-of-type {
+          margin-bottom: 15vh;
+        }
+      }
+    }
+  }
+  .footer {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100vw;
+    min-width: 250px;
+  }
+}
+.galleryImage img {
+  min-height: 200px;
+  min-width: 250px;
 }

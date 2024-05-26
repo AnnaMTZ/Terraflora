@@ -41,8 +41,8 @@
 
 .img-window img {
   z-index: 500;
-  max-height: 80vh;
-  max-width: 80vw;
+  max-height: 85vh;
+  max-width: 85vw;
 }
 
 .next-btn,
@@ -71,4 +71,70 @@
 .prev-btn,
 .next-btn:hover {
   opacity: 0.8;
+}
+
+#footerContWorks {
+  background-color: rgb(22, 49, 12);
+}
+
+#footerContContacts {
+  top: 85vh;
+  position: absolute;
+  bottom: 0;
+}
+
+#aboutTextContacts {
+  font-size: 30px;
+  padding: 5vh 5vw;
+}
+
+#contactMain {
+  width: 100vw;
+}
+
+.simpleMenu {
+  width: 100vw;
+  background-color: #41180f;
+  position: relative;
+  margin: 0 auto;
+  bottom: 0;
+  padding: 5vh auto;
+  height: auto;
+
+  .simpleMenuUl {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 250px;
+    width: 100vw;
+    margin: 0 auto;
+    background-color: #41180f;
+    padding: 3vh 0;
+
+    li {
+      list-style-type: none;
+      padding-top: 15px;
+
+      a {
+        text-decoration: none;
+        // color: rgb(5, 17, 5);
+        font-family: "Chilanka", cursive;
+        padding: 15px;
+        transition: ease-in-out 0.5s;
+        font-size: 1rem;
+        font-weight: bold;
+        color: lightgrey;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100vw;
+    min-width: 250px;
+  }
 }
