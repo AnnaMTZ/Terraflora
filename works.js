@@ -75,7 +75,7 @@ function changeImg(changeDir) {
     }
   }
 
-  newImg.setAttribute("src", `/photo/bor/bor${calcNewImg}.jpg`);
+  // newImg.setAttribute("src", `/photo/bor/bor${calcNewImg}.jpg`);
   newImg.setAttribute("id", "current-img");
   getLatestOpenedImg = calcNewImg;
 }
